@@ -1,9 +1,9 @@
 # Copyright (c) Meta Platforms, Inc. and affiliates.
 # All rights reserved.
-# 
+#
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
-# 
+#
 
 # --------------------------------------------------------
 # Fast R-CNN
@@ -14,14 +14,16 @@
 
 import time
 
+
 class Timer(object):
     """A simple timer."""
+
     def __init__(self):
-        self.total_time = 0.
+        self.total_time = 0.0
         self.calls = 0
-        self.start_time = 0.
-        self.diff = 0.
-        self.average_time = 0.
+        self.start_time = 0.0
+        self.diff = 0.0
+        self.average_time = 0.0
         self.warm_up = 0
 
     def tic(self):
